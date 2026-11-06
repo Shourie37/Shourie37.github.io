@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shourie Amireddy | Software Engineer at AWS</title>
+  <meta name="description" content="Shourie Amireddy is a software engineer at AWS in Seattle. He builds distributed systems, AI agents, and data pipelines.">
+  <meta name="author" content="Shourie Amireddy">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shourie37.github.io/">
+  <meta property="og:title" content="Shourie Amireddy | Software Engineer at AWS">
+  <meta property="og:description" content="Software engineer at AWS in Seattle. Distributed systems, AI agents, and data pipelines.">
+  <meta name="twitter:card" content="summary">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b5cad'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' fill='white' text-anchor='middle'%3ESA%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="nav-name" href="#top">Shourie Amireddy</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container">
+        <p class="eyebrow">Software Engineer at AWS · Seattle</p>
+        <h1 id="hero-title">Shourie Amireddy</h1>
+        <p class="lead">I build distributed systems, AI agents, and data pipelines.</p>
+        <p class="hero-actions">
+          <a class="button" href="#projects">See projects</a>
+          <a class="button button-secondary" href="#contact">Get in touch</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">About</h2>
+        <p>I am a software engineer at Amazon Web Services in Seattle, with 8+ years of experience building distributed systems, REST APIs, data pipelines, and generative AI products.</p>
+        <p>At AWS I work on Amazon WorkSpaces, where I help customers run AI agents safely on their virtual desktops. Before that I built identity, payment, and data systems for Amazon One and Alexa for Business.</p>
+      </div>
+    </section>
+
+    <section id="work" aria-labelledby="work-title">
+      <div class="container">
+        <h2 id="work-title">Work highlights</h2>
+        <p class="section-note">These are company projects, so their code is not public. I describe them here at a public level.</p>
+        <ul class="highlights">
+          <li>
+            <h3>AI agents on virtual desktops</h3>
+            <p>Launched a service that lets customers' AI agents operate virtual desktops, in 17 AWS regions, and extended it to Windows 11, Windows 10, and Linux.</p>
+          </li>
+          <li>
+            <h3>Agent audit trail</h3>
+            <p>Built a feature that records every action an AI agent takes as replayable video, encrypted with the customer's own key.</p>
+          </li>
+          <li>
+            <h3>Experiment analysis</h3>
+            <p>Extended an experiment analysis platform so AWS AppConfig customers get statistical results for every experiment run.</p>
+          </li>
+          <li>
+            <h3>Data pipeline performance</h3>
+            <p>Made an hourly data lake job 93% faster, with 99.9% less data scanned.</p>
+          </li>
+          <li>
+            <h3>Payments</h3>
+            <p>Let blocked customers update their payment card in the store lane, which reduced blocked customers from 11% to 4%.</p>
+          </li>
+          <li>
+            <h3>Generative AI</h3>
+            <p>Launched a RAG-based sales assistant used by 4 companies, and evaluated several LLMs for answer correctness and grounding.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Projects</h2>
+        <p class="section-note">Open-source projects. Each one runs locally and reports real, measured output.</p>
+
+        <h3 class="subhead">Featured</h3>
+        <ul class="cards">
+          <!-- PROJECT: mcp-agent-loop START -->
+          <li class="card">
+            <h4><a href="https://github.com/Shourie37/mcp-agent-loop">mcp-agent-loop</a></h4>
+            <p>An agent harness: MCP-style tool server, an agent loop with limits and traces, workflow graphs, and an evaluation suite.</p>
+            <p class="result"><span class="result-label">Result:</span> Task success rose from 63% to 100% between eval configs.</p>
+            <ul class="tags" aria-label="Tags"><li>Python</li><li>AI agents</li><li>MCP</li><li>Evaluation</li></ul>
+          </li>
+          <!-- PROJECT: mcp-agent-loop END -->
+
+          <!-- PROJECT: rag-eval-harness START -->
+          <li class="card">
+            <h4><a href="https://github.com/Shourie37/rag-eval-harness">rag-eval-harness</a></h4>
+            <p>RAG with BM25 and hybrid retrieval, plus evaluation of retrieval, correctness, grounding, and refusals.</p>
+            <p class="result"><span class="result-label">Result:</span> The grounding check flagged 14 of 14 injected hallucinations.</p>
+            <ul class="tags" aria-label="Tags"><li>Python</li><li>RAG</li><li>LLM evaluation</li><li>BM25</li></ul>
+          </li>
+          <!-- PROJECT: rag-eval-harness END -->
+
+          <!-- PROJECT: payments-ledger-api START -->
+          <li class="card">
+            <h4><a href="https://github.com/Shourie37/payments-ledger-api">payments-ledger-api</a></h4>
+            <p>A double-entry ledger API with idempotency keys, optimistic concurrency, signed cursors, and an outbox for webhooks.</p>
+            <p class="result"><span class="result-label">Result:</span> 12 concurrent duplicate requests make exactly one payment.</p>
+            <ul class="tags" aria-label="Tags"><li>Python</li><li>REST API</li><li>Payments</li><li>Concurrency</li></ul>
+          </li>
+          <!-- PROJECT: payments-ledger-api END -->
+
+          <!-- PROJECT: raft-kv START -->
+          <li class="card">
+            <h4><a href="https://github.com/Shourie37/raft-kv">raft-kv</a></h4>
+            <p>A Raft key-value store written from scratch, with chaos tests for partitions and leader failure.</p>
+            <p class="result"><span class="result-label">Result:</span> History stays linearizable across 20 chaos seeds with crashes, partitions, and message loss.</p>
+            <ul class="tags" aria-label="Tags"><li>Python</li><li>Raft</li><li>Consensus</li><li>Chaos testing</li></ul>
+          </li>
+          <!-- PROJECT: raft-kv END -->
+        </ul>
+
+        <h3 class="subhead">More projects</h3>
+        <ul class="cards">
+          <!-- PROJECT: thundering-herd-sim START -->
+          <li class="card">
+            <h4><a href="https://github.com/Shourie37/thundering-herd-sim">thundering-herd-sim</a></h4>
+            <p>A simulator that shows how reconnect storms overload a service, and how jitter, throttling, and autoscaling fix it.</p>
+            <p class="result"><span class="result-label">Result:</span> Failed requests fell from 1,063,025 to 19,718 with all mitigations.</p>
+            <ul class="tags" aria-label="Tags"><li>Python</li><li>Simulation</li><li>Resilience</li></ul>
+          </li>
+          <!-- PROJECT: thundering-herd-sim END -->
+
+          <!-- PROJECT: feature-flags-experiments START -->
+          <li class="card">
+            <h4><a href="https://github.com/Shourie37/feature-flags-experiments">feature-flags-experiments</a></h4>
+            <p>Feature flags and A/B experiments with deterministic rollout, z-tests, t-tests, and sample ratio mismatch checks.</p>
+            <p class="result"><span class="result-label">Result:</span> The peeking test shows 10 early looks raise false positives from 4.5% to 18.9%.</p>
+            <ul class="tags" aria-label="Tags"><li>Python</li><li>A/B testing</li><li>Statistics</li></ul>
+          </li>
+          <!-- PROJECT: feature-flags-experiments END -->
+
+          <!-- PROJECT: incremental-etl START -->
+          <li class="card">
+            <h4><a href="https://github.com/Shourie37/incremental-etl">incremental-etl</a></h4>
+            <p>Incremental upserts with partition pruning and watermarks, benchmarked against full-table scans.</p>
+            <p class="result"><span class="result-label">Result:</span> Up to 21.7x faster than full scans at day 14.</p>
+            <ul class="tags" aria-label="Tags"><li>Python</li><li>Data pipelines</li><li>ETL</li></ul>
+          </li>
+          <!-- PROJECT: incremental-etl END -->
+
+          <!-- PROJECT: distributed-rate-limiter START -->
+          <li class="card">
+            <h4><a href="https://github.com/Shourie37/distributed-rate-limiter">distributed-rate-limiter</a></h4>
+            <p>Five rate-limit algorithms, a shared-store distributed mode, and fail-open vs fail-closed policies.</p>
+            <p class="result"><span class="result-label">Result:</span> The cached limiter made 23 store calls instead of 8,000 and stayed inside its over-admit bound.</p>
+            <ul class="tags" aria-label="Tags"><li>Python</li><li>Distributed systems</li><li>Rate limiting</li></ul>
+          </li>
+          <!-- PROJECT: distributed-rate-limiter END -->
+
+          <!-- PROJECT: slo-anomaly-alerts START -->
+          <li class="card">
+            <h4><a href="https://github.com/Shourie37/slo-anomaly-alerts">slo-anomaly-alerts</a></h4>
+            <p>Anomaly detection and SLO burn-rate alerts that catch what static thresholds miss, with precision and recall per detector.</p>
+            <p class="result"><span class="result-label">Result:</span> Seasonal baseline plus burn rate gave 100% recall and 0 false pages. The static alarm had 25% recall.</p>
+            <ul class="tags" aria-label="Tags"><li>Python</li><li>Observability</li><li>SLOs</li></ul>
+          </li>
+          <!-- PROJECT: slo-anomaly-alerts END -->
+
+          <!-- PROJECT: consistent-hash-cache START -->
+          <li class="card">
+            <h4><a href="https://github.com/Shourie37/consistent-hash-cache">consistent-hash-cache</a></h4>
+            <p>A distributed cache with consistent hashing, replication, hinted handoff, and stampede protection.</p>
+            <p class="result"><span class="result-label">Result:</span> Single-flight plus early expiration cut hot-key backend loads from 2,189 to 13.</p>
+            <ul class="tags" aria-label="Tags"><li>Python</li><li>Caching</li><li>Distributed systems</li></ul>
+          </li>
+          <!-- PROJECT: consistent-hash-cache END -->
+        </ul>
+
+        <h3 class="subhead">Systems deep dives</h3>
+        <ul class="cards">
+          <!-- PROJECT: durable-workflow-engine START -->
+          <li class="card">
+            <h4><a href="https://github.com/Shourie37/durable-workflow-engine">durable-workflow-engine</a></h4>
+            <p>A durable workflow engine with JSON state machines, retries, saga compensation, and crash-and-resume from event history.</p>
+            <p class="result"><span class="result-label">Result:</span> 222 injected crashes across 150 runs, with zero duplicate side effects.</p>
+            <ul class="tags" aria-label="Tags"><li>Python</li><li>Workflows</li><li>Event sourcing</li><li>Sagas</li></ul>
+          </li>
+          <!-- PROJECT: durable-workflow-engine END -->
+
+          <!-- PROJECT: lsm-kv-store START -->
+          <li class="card">
+            <h4><a href="https://github.com/Shourie37/lsm-kv-store">lsm-kv-store</a></h4>
+            <p>An LSM-tree storage engine with a write-ahead log, Bloom filters, and leveled and size-tiered compaction.</p>
+            <p class="result"><span class="result-label">Result:</span> Bloom filters cut block reads for missing keys by about 90x.</p>
+            <ul class="tags" aria-label="Tags"><li>Python</li><li>Storage engines</li><li>LSM tree</li></ul>
+          </li>
+          <!-- PROJECT: lsm-kv-store END -->
+
+          <!-- PROJECT: event-sourced-orders START -->
+          <li class="card">
+            <h4><a href="https://github.com/Shourie37/event-sourced-orders">event-sourced-orders</a></h4>
+            <p>An event-sourced order and payment system on a partitioned log, with consumer groups and an outbox.</p>
+            <p class="result"><span class="result-label">Result:</span> 143 injected consumer crashes, with no event lost or applied twice.</p>
+            <ul class="tags" aria-label="Tags"><li>Python</li><li>Event sourcing</li><li>Kafka-style log</li><li>Payments</li></ul>
+          </li>
+          <!-- PROJECT: event-sourced-orders END -->
+
+          <!-- PROJECT: realtime-chat-service START -->
+          <li class="card">
+            <h4><a href="https://github.com/Shourie37/realtime-chat-service">realtime-chat-service</a></h4>
+            <p>A real-time chat service with a WebSocket server built from scratch, offline delivery, and presence.</p>
+            <p class="result"><span class="result-label">Result:</span> 100% of 98,000 messages delivered to 1,000 clients at 4.7 ms p99.</p>
+            <ul class="tags" aria-label="Tags"><li>Python</li><li>WebSockets</li><li>asyncio</li><li>System design</li></ul>
+          </li>
+          <!-- PROJECT: realtime-chat-service END -->
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title">Skills</h2>
+        <dl class="skills">
+          <div><dt>Languages</dt><dd>Java, Python, TypeScript, Go, SQL</dd></div>
+          <div><dt>Cloud</dt><dd>AWS (Lambda, DynamoDB, Step Functions, ECS, EMR, Kinesis, KMS, IAM, CloudWatch)</dd></div>
+          <div><dt>AI</dt><dd>AI agents, MCP, RAG, LLM evaluation, Amazon Bedrock</dd></div>
+          <div><dt>Data</dt><dd>Spark, Apache Iceberg, Kafka, PostgreSQL, Redshift</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="education" aria-labelledby="education-title">
+      <div class="container">
+        <h2 id="education-title">Education</h2>
+        <ul class="education">
+          <li><strong>M.S. Computer Science</strong>, Stony Brook University</li>
+          <li><strong>B.Tech. Computer Engineering</strong>, International Institute of Information Technology</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Contact</h2>
+        <p>The best way to reach me is email.</p>
+        <ul class="contact">
+          <li><span class="contact-label">Email</span> <a href="mailto:shourie3009@gmail.com">shourie3009@gmail.com</a></li>
+          <li><span class="contact-label">LinkedIn</span> <a href="https://linkedin.com/in/shourie7">linkedin.com/in/shourie7</a></li>
+          <li><span class="contact-label">GitHub</span> <a href="https://github.com/Shourie37">github.com/Shourie37</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Shourie Amireddy · <a href="#top">Back to top</a></p>
+    </div>
+  </footer>
+</body>
+</html>
