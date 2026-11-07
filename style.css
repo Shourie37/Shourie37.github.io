@@ -400,4 +400,5 @@ p {
   .card, .highlights li { break-inside: avoid; }
   h2, h3, .subhead { break-after: avoid; }
   .nav-links { display: none; }
+  #skills, #education, #contact { break-inside: avoid; }
 }
